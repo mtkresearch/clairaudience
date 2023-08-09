@@ -1,0 +1,50 @@
+{
+    "seed": 42,
+    "train_mode": false,
+    "model_name": "openai/whisper-large-v2",
+    "model_force_lang": "english",
+
+    "dataset_name": "gigaspeech",
+    "dataset_path": "data/hf_dd_data/gigaspeech/m",
+    "train_with_prompts": true,
+    "valid_with_prompts": true,
+    "test_with_prompts": true,
+    "train_prompt_info": ["[ domain: tag1, tag2, tag3]"],
+    "valid_prompt_info": ["[ domain: tag1, tag2, tag3]"],
+    "test_prompt_info": ["[ domain: tag1, tag2, tag3]"],
+
+    "dataset_split": "test",
+    "num_beams": 3,
+    "output_dir": "outputs",
+    "cache_dir": "outputs/cache_dir",
+    "dataset_num_proc": 8,
+    "num_subsamples": -1,
+    "num_train_subsamples": -1,
+    "num_valid_subsamples": 100,
+    "num_test_subsamples": -1,
+
+    "use_kl_loss":false,
+    "kl_coeff": 0.2,
+    "kl_type": "KL_div",
+    "use_cross_attn": true,
+    "use_no_speech_bias": false,
+    "use_null_inputs": false,
+
+    "max_target_positions": 448,
+
+    "learning_rate": 5e-6,
+    "per_device_train_batch_size": 8,
+    "gradient_accumulation_steps": 64,
+    "weight_decay": 0,
+    "max_steps": 1000,
+    "warmup_steps": 200,
+    "dataloader_num_workers": 16,
+
+    "per_device_eval_batch_size": 4,
+    "eval_steps": 50,
+    "evaluation_strategy": "no",
+    "logging_steps": 10,
+    "save_steps": 50,
+    "predict_with_generate": true,
+    "resume_from_checkpoint": null
+}

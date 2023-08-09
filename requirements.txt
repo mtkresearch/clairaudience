@@ -1,0 +1,10 @@
+git+https://github.com/openai/whisper.git@v20230314#egg=whisper
+datasets>=2.6.1
+transformers==4.29.2
+librosa
+evaluate>=0.3.0
+jiwer
+gradio
+ipykernel
+ipywidgets
+editdistance
