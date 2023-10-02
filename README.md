@@ -18,3 +18,6 @@ To run the training example, ensure that Gigaspeech medium is downladed to `data
 ```
 python ./clairaudience/main.py ./configs/cfg_gigaspeech_evaluation.json
 ```
+
+## Model Weight
+See https://huggingface.co/MediaTek-Research/Clairaudience
